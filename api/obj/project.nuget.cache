@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "++omedQg4xvTBDidTMJQh6Ty4bX8PaPpD18o1xaCerVMmvvRCuWTdLZ1KCZECaP3kvZt3P3tKzXYL/PX9pMQbg==",
+  "dgSpecHash": "q2SoSyF65/AKzxIcSFLGASDb7aBVbife8ImEMiy1AAB7qDFBXZPEsTUirCDcfAwW+pFowMA+SkSZECjBrh0Mdw==",
   "success": true,
-  "projectFilePath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\api\\API.csproj",
+  "projectFilePath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
