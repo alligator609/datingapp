@@ -19,7 +19,7 @@
                 <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Welcome user</button>
                 <div ngbDropdownMenu aria-labelledby="dropdownManual">
                   <a ngbDropdownItem href="" class="dropdown-item">Profile</a>
-                  <a ngbDropdownItem href="" class="dropdown-item">Logout</a>
+                  <a ngbDropdownItem href="" *ngIf="loggedIn" (click)="logout()" class="dropdown-item">Logout</a>
                 </div>
               </div>
 
@@ -28,7 +28,6 @@
                 <input class="form-control me-2" type="password" name="password"  [(ngModel)]="model.password" placeholder="password">
                 <button class="btn btn-outline-success" type="submit">Login</button>
               </form>
-              <button *ngIf="loggedIn" (click)="logout()" >Logout</button>
             </div>
         </div>
       
