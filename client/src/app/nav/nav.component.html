@@ -3,7 +3,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">Dating App</a>        
             <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="currentUser$ |async">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="accountService.currentUser$ |async">
                 <li class="nav-item">
                   <a class="nav-link " aria-current="page" href="#">Matches</a>
                 </li>
@@ -15,15 +15,15 @@
                 </li>
               </ul>
          
-              <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown" *ngIf="currentUser$ |async">
+              <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown" *ngIf="accountService.currentUser$ |async">
                 <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Welcome user</button>
                 <div ngbDropdownMenu aria-labelledby="dropdownManual">
                   <a ngbDropdownItem href="" class="dropdown-item">Profile</a>
-                  <a ngbDropdownItem href="" *ngIf="currentUser$ |async" (click)="logout()" class="dropdown-item">Logout</a>
+                  <a ngbDropdownItem href="" *ngIf="accountService.currentUser$ |async" (click)="logout()" class="dropdown-item">Logout</a>
                 </div>
               </div>
 
-              <form #loginForm="ngForm" *ngIf="(currentUser$ |async) === null" (ngSubmit)="login()" class="d-flex align-right mr-2" autocomplete="off">
+              <form #loginForm="ngForm" *ngIf="(accountService.currentUser$ |async) === null" (ngSubmit)="login()" class="d-flex align-right mr-2" autocomplete="off">
                 <input class="form-control me-2" type="text" name="username" [(ngModel)]="model.username"  placeholder="username">
                 <input class="form-control me-2" type="password" name="password"  [(ngModel)]="model.password" placeholder="password">
                 <button class="btn btn-outline-success" type="submit">Login</button>
