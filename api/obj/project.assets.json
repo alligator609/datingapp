@@ -1554,11 +1554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\api\\API.csproj",
+      "projectUniqueName": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\datingapp\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\api\\API.csproj",
+      "projectPath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\datingapp\\API\\API.csproj",
       "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\api\\obj\\",
+      "outputPath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\datingapp\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

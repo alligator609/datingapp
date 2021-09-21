@@ -1,7 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { User } from '../_model/user';
-import { AccountService } from '../_services/account.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -9,35 +7,19 @@ import { AccountService } from '../_services/account.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  registerMode:boolean =false;
-  users:any ;
-  constructor(private http:HttpClient,
-    private accountService:AccountService) { }
+  registerMode = false;
+
+  constructor() { }
 
   ngOnInit(): void {
-    this.getUsers();
-    this.setCurrentUser();
   }
 
-  registerToggle(){
+  registerToggle() {
     this.registerMode = !this.registerMode;
   }
 
-  getUsers(){
-
-    this.http.get('https://localhost:5001/api/users').subscribe(response => {
-      this.users = response;
-      console.log(this.users);
-    },
-    error =>{
-      console.log(error);
-      });
+  cancelRegisterMode(event: boolean) {
+    this.registerMode = event;
   }
-
-  setCurrentUser(){
-    const user:User = JSON.parse(localStorage.getItem('user'));
-    this.accountService.setCurrentUser(user);
-   }
-
 
 }
