@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "E0yCy2dq2dAFzCZegzAHA75Ffe8u6gGrAMEc02Q3d2Q1w4ZW7sfjpSIeGuM7eZlu6tU4Gqu97eo10m863J0GtA==",
+  "dgSpecHash": "c/j2SY9yPDrTBPLIuEcmDa/MBeGeBqqbg0YJSy9HzDk+lF0j1LgCCRfDy6n8Tv0AAYVwl1+peh6FIc/2ToGLfA==",
   "success": true,
-  "projectFilePath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\datingapp\\API\\api.csproj",
+  "projectFilePath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\datingapp\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\asus\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.7\\microsoft.aspnetcore.authentication.jwtbearer.5.0.7.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -46,6 +48,7 @@
     "C:\\Users\\asus\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.11.1\\system.identitymodel.tokens.jwt.6.11.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
