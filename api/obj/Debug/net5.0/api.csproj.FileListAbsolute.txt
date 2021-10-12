@@ -129,3 +129,6 @@ D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\dat
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\AutoMapper.dll
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\Data\UserSeedData.json
+D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\api\bin\Debug\net5.0\CloudinaryDotNet.dll
+D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\api\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
+D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\api\bin\Debug\net5.0\Newtonsoft.Json.dll
