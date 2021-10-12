@@ -27,7 +27,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './_interceptors/loading.interceptor';
 import { RouterModule } from '@angular/router';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
-
+import { TextInputComponent } from './_forms/text-input/text-input.component';
+import { DateInputComponent } from './_forms/date-input/date-input.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +45,8 @@ import { PhotoEditorComponent } from './members/photo-editor/photo-editor.compon
     MemberCardComponent,
     MemberEditComponent,
     PhotoEditorComponent,
-
+    TextInputComponent,
+    DateInputComponent
   ],
   imports: [
     BrowserModule,
