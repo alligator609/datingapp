@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mqDp2TAmS99GVjLUQMUDDPn9uhum7QdoB6mq4m4EyzoCP8qat9woON2tyKIlqMQlk2nm64ERin13pCHvhucl8g==",
+  "dgSpecHash": "CWJNm/SG9CTMXNGtMhkVIvk+XzoCJsmKFFjRSlXhMfsw/aEhXmz/kgmCQ/9Zm8HZMsksJwanqtk02A68kNOfqg==",
   "success": true,
-  "projectFilePath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\datingapp\\API\\API.csproj",
+  "projectFilePath": "D:\\Udemy - Build an app with ASPNET Core and Angular from scratch\\Dating App\\datingapp\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
