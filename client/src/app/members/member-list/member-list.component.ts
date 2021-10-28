@@ -30,7 +30,8 @@ export class MemberListComponent implements OnInit {
    // this.members$ =this.memberService.getMembers();
    this. loadMembers();
   }
-  loadMembers(){
+  loadMembers(orderby?:string){
+    this.userParams.orderBy=orderby;
     this.userParams = this.memberService.setUserParams(this.userParams);
 
     this.memberService.getMembers(this.userParams).subscribe((respose)=>{
