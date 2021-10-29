@@ -25,7 +25,7 @@ namespace API.Data
             {
                 new AppRole {Name="Member"},
                 new AppRole {Name="Admin"},
-                new AppRole {Name="Moderetor"}
+                new AppRole {Name="Moderator"}
 
             };
 
@@ -47,7 +47,7 @@ namespace API.Data
                 UserName = "admin"
             };
             await userManager.CreateAsync(admin, "P@55word");
-            await userManager.AddToRolesAsync(admin, new[] {"Admin","Moderetor"});
+            await userManager.AddToRolesAsync(admin, new[] {"Admin","Moderator"});
         }
     }
 }
