@@ -110,7 +110,6 @@ D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\dat
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
-D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\obj\Debug\net5.0\API.GeneratedMSBuildEditorConfig.editorconfig
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\obj\Debug\net5.0\API.AssemblyInfoInputs.cache
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\obj\Debug\net5.0\API.AssemblyInfo.cs
@@ -132,3 +131,9 @@ D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\dat
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\api\bin\Debug\net5.0\CloudinaryDotNet.dll
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\api\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
 D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\api\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Udemy - Build an app with ASPNET Core and Angular from scratch\Dating App\datingapp\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
