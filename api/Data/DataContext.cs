@@ -16,6 +16,8 @@ namespace API.Data
 
         public DbSet<UserLike> Likes { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<Group> Groups { get; set; }
+        public DbSet<Connection> Connections { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -32,7 +34,12 @@ namespace API.Data
                 .WithOne(u => u.Role)
                 .HasForeignKey(ur => ur.RoleId)
                 .IsRequired();
-             
+
+            builder.Entity<Group>()
+               .HasMany(x => x.Connections)
+               .WithOne()
+               .OnDelete(DeleteBehavior.Cascade);
+
             builder.Entity<UserLike>().HasKey(k => new { k.SourceUserId, k.LikedUserId });
 
             builder.Entity<UserLike>().HasOne(s => s.SourceUser).WithMany(l => l.LikedUsers).HasForeignKey(s => s.SourceUserId).OnDelete(DeleteBehavior.Cascade); //change to no action onsql server

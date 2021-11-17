@@ -51,8 +51,8 @@ namespace API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "api", Version = "v1" });
             });
 
-             // extionsiois to clean code
-           services.AddIdentityServices(_config);
+            // extionsiois to clean code
+            services.AddIdentityServices(_config);
 
             services.AddSignalR();
             
@@ -85,7 +85,7 @@ namespace API
             {
                 endpoints.MapControllers();
                 endpoints.MapHub<PresenceHub>("hubs/presence");
-               // endpoints.MapHub<MessageHub>("hubs/message");
+                endpoints.MapHub<MessageHub>("hubs/message");
             });
         }
     }

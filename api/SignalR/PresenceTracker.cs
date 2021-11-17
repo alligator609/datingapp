@@ -68,5 +68,7 @@ namespace API.SignalR
 
             return Task.FromResult(connectionIds);
         }
+
+
     }
 }

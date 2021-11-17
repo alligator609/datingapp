@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { HubConnection, HubConnectionBuilder } from '@microsoft/signalr';
 import { ToastrService } from 'ngx-toastr';
 import { BehaviorSubject } from 'rxjs';
+import { take } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { User } from '../_model/user';
 
@@ -16,7 +18,8 @@ export class PresenceService {
   onlineUsers$ = this.onlineUsersSource.asObservable();
   
   constructor(
-    private toastr:ToastrService
+    private toastr:ToastrService,
+    private router:Router
   ) { }
 
   createHubConnection(user: User) {
@@ -35,21 +38,28 @@ export class PresenceService {
 
       // listern to server
     this.hubConnection.on('UserIsOnline', username => {
-      this.toastr.info(username+ 'has connnected');
-      /* this.onlineUsers$.pipe(take(1)).subscribe(usernames => {
+      //this.toastr.info(username+ 'has connnected');
+      this.onlineUsers$.pipe(take(1)).subscribe(usernames => {
         this.onlineUsersSource.next([...usernames, username]) 
-      });*/
+      });
     });
     this.hubConnection.on('UserIsOffline', username => {
-      this.toastr.info(username+ 'has disconnnected');
-      /* this.onlineUsers$.pipe(take(1)).subscribe(usernames => {
-        this.onlineUsersSource.next([...usernames, username]) 
-      });*/
+      //this.toastr.info(username+ 'has disconnnected');
+      this.onlineUsers$.pipe(take(1)).subscribe(usernames => {
+        this.onlineUsersSource.next([...usernames.filter(x=> x!==username), username]) 
+      });
     });
 
     //online users
     this.hubConnection.on('GetOnlineUsers', (usernames: string[]) => {
       this.onlineUsersSource.next(usernames);
+    })
+
+    this.hubConnection.on('NewMessageReceived', ({username, knownAs}) => {
+      this.toastr.info(knownAs + ' has sent you a new message!')
+        .onTap
+        .pipe(take(1))
+        .subscribe(() => this.router.navigateByUrl('/members/' + username + '?tab=3'));
     })
   }
 
